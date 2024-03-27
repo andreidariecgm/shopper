@@ -1,0 +1,10 @@
+<header>
+  <h1>Shopper</h1>
+  <nav>
+    <a [routerLink]="['products']" routerLinkActive="active" >Products</a> |
+    <a [routerLink]="['cart']" routerLinkActive="active" >Cart ({{(cart$ | async)?.length}})</a>
+  </nav>
+</header>
+<main>
+  <router-outlet />
+</main>
